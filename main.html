@@ -1,0 +1,412 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   eBooks &amp; Code Sheets Showcase
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-[#1a160b] text-white font-sans min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="bg-[#121009] px-4 py-3 flex items-center justify-between max-w-7xl mx-auto w-full">
+   <div class="flex items-center space-x-6">
+    <div class="text-white font-bold text-lg cursor-pointer select-none">
+     ChefReadz
+    </div>
+    <ul class="hidden md:flex space-x-6 text-sm font-semibold">
+     <li>
+      <button id="showEbooksBtn" class="hover:text-[#00c853] transition">
+       eBooks
+      </button>
+     </li>
+     <li>
+      <button id="showCodeSheetsBtn" class="hover:text-[#00c853] transition">
+       Roadmaps
+      </button>
+     </li>
+    </ul>
+   </div>
+   <!-- Mobile menu button -->
+   <div class="md:hidden">
+    <button id="mobileMenuBtn" aria-label="Toggle menu" class="focus:outline-none">
+     <i class="fas fa-bars text-white text-xl"></i>
+    </button>
+   </div>
+  </nav>
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="hidden bg-[#121009] px-4 py-3 space-y-2 max-w-7xl mx-auto w-full md:hidden">
+   <button id="mobileShowEbooksBtn" class="block w-full text-left text-white font-semibold hover:text-[#00c853] transition">
+    eBooks
+   </button>
+   <button id="mobileShowCodeSheetsBtn" class="block w-full text-left text-white font-semibold hover:text-[#00c853] transition">
+    Roadmaps
+   </button>
+  </div>
+  <!-- Main content -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 py-8 w-full">
+   <!-- eBooks Section -->
+   <section id="ebooksSection">
+    <h2 class="font-bold text-sm mb-4 text-center">
+     Trending Now &amp; More eBooks to Explore
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-4 gap-6">
+     <!-- Python -->
+     <div class="bg-white rounded-md shadow-md relative max-w-xs mx-auto">
+      <div class="absolute top-2 left-2 bg-[#e1e0f9] text-[#5a5bbf] text-[10px] font-semibold px-2 py-[2px] rounded-full select-none">
+       E Book
+      </div>
+      <div class="p-4 pt-10 text-center">
+       <h3 class="font-extrabold text-xl text-[#1a1a1a]">
+        Python
+       </h3>
+       <p class="text-[10px] text-[#1a1a1a] mt-1 mb-3">
+        A Beginner's Guide to Coding &amp; Beyond
+       </p>
+       <div class="flex justify-center gap-3">
+        <a class="bg-[#00c853] text-[10px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/Python - eBook _ GUVI.pdf" rel="noopener noreferrer" target="_blank" download>
+         Download Now
+        </a>
+        <a class="bg-[#00c853] text-[10px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/Python - eBook _ GUVI.pdf" rel="noopener noreferrer" target="_blank">
+         View
+        </a>
+       </div>
+      </div>
+      <img alt="Ebook cover showing a Python book with green and black design on a white surface" class="w-full rounded-b-md" height="140" src="https://storage.googleapis.com/a1aa/image/4768e7ab-fd70-48fc-20c1-ed7baf19d5ef.jpg" width="240"/>
+     </div>
+     <!-- MongoDB -->
+     <div class="bg-white rounded-md shadow-md relative max-w-xs mx-auto">
+      <div class="absolute top-2 left-2 bg-[#e1e0f9] text-[#5a5bbf] text-[10px] font-semibold px-2 py-[2px] rounded-full select-none">
+       E Book
+      </div>
+      <div class="p-4 pt-10 text-center">
+       <h3 class="font-extrabold text-xl text-[#1a1a1a]">
+        MongoDB for Beginners
+       </h3>
+       <p class="text-[10px] text-[#1a1a1a] mt-1 mb-3">
+        Your Guide to Modern Databases
+       </p>
+       <div class="flex justify-center gap-3">
+        <a class="bg-[#00c853] text-[10px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/Mongodb - Ebook _ GUVI.pdf" rel="noopener noreferrer" target="_blank" download>
+         Download Now
+        </a>
+        <a class="bg-[#00c853] text-[10px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/Mongodb - Ebook _ GUVI.pdf" rel="noopener noreferrer" target="_blank">
+         View
+        </a>
+       </div>
+      </div>
+      <img alt="Ebook cover showing a MongoDB book with green and black design on a white surface" class="w-full rounded-b-md" height="140" src="https://storage.googleapis.com/a1aa/image/4cf30efd-2187-43d1-0224-c3ef5b08e7dd.jpg" width="240"/>
+     </div>
+     <!-- JavaScript -->
+     <div class="bg-white rounded-md shadow-md relative max-w-xs mx-auto">
+      <div class="absolute top-2 left-2 bg-[#e1e0f9] text-[#5a5bbf] text-[10px] font-semibold px-2 py-[2px] rounded-full select-none">
+       E Book
+      </div>
+      <div class="p-4 pt-10 text-center">
+       <h3 class="font-extrabold text-xl text-[#1a1a1a]">
+        Start your Development Journey with JavaScript
+       </h3>
+       <p class="text-[10px] text-[#1a1a1a] mt-1 mb-3">
+        A Beginner's Guide
+       </p>
+       <div class="flex justify-center gap-3">
+        <a class="bg-[#00c853] text-[10px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/JavaScript - Ebook _ GUVI.pdf" rel="noopener noreferrer" target="_blank" download>
+         Download Now
+        </a>
+        <a class="bg-[#00c853] text-[10px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/JavaScript - Ebook _ GUVI.pdf" rel="noopener noreferrer" target="_blank">
+         View
+        </a>
+       </div>
+      </div>
+      <img alt="Ebook cover showing a JavaScript book with green and black design on a white surface" class="w-full rounded-b-md" height="140" src="https://storage.googleapis.com/a1aa/image/e9824da1-b70e-41c1-7642-20454fd7ae0b.jpg" width="240"/>
+     </div>
+     <!-- React -->
+     <div class="bg-white rounded-md shadow-md relative max-w-xs mx-auto">
+      <div class="absolute top-2 left-2 bg-[#e1e0f9] text-[#5a5bbf] text-[10px] font-semibold px-2 py-[2px] rounded-full select-none">
+       E Book
+      </div>
+      <div class="absolute top-2 right-2 bg-[#00c853] text-[8px] font-semibold px-2 py-[1px] rounded select-none">
+       FREE
+      </div>
+      <div class="p-4 pt-10 text-center">
+       <h3 class="font-extrabold text-lg text-[#1a1a1a]">
+        React Ebook
+       </h3>
+       <p class="text-[8px] text-[#1a1a1a] mt-1 mb-3">
+        Your Go-To Guide for a Kickstart Development Journey
+       </p>
+       <div class="flex justify-center gap-3">
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/React - EBook _ GUVI.pdf" rel="noopener noreferrer" target="_blank" download>
+         Download Now
+        </a>
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/React - EBook _ GUVI.pdf" rel="noopener noreferrer" target="_blank">
+         View
+        </a>
+       </div>
+      </div>
+      <img alt="Ebook cover showing a React book with green and black design on a white surface" class="w-full rounded-b-md" height="120" src="https://storage.googleapis.com/a1aa/image/d20e961b-94f7-43d5-e094-20d7c4491c82.jpg" width="180"/>
+     </div>
+     <!-- UI/UX -->
+     <div class="bg-white rounded-md shadow-md relative max-w-xs mx-auto">
+      <div class="absolute top-2 left-2 bg-[#e1e0f9] text-[#5a5bbf] text-[10px] font-semibold px-2 py-[2px] rounded-full select-none">
+       E Book
+      </div>
+      <div class="absolute top-2 right-2 bg-[#00c853] text-[8px] font-semibold px-2 py-[1px] rounded select-none">
+       FREE
+      </div>
+      <div class="p-4 pt-10 text-center">
+       <h3 class="font-extrabold text-lg text-[#1a1a1a]">
+        First Steps in UI/UX
+       </h3>
+       <p class="text-[8px] text-[#1a1a1a] mt-1 mb-3">
+        The Beginner's Guide to UI/UX
+       </p>
+       <div class="flex justify-center gap-3">
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/UI_UX eBook _ GUVI.pdf" rel="noopener noreferrer" target="_blank" download>
+         Download Now
+        </a>
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/UI_UX eBook _ GUVI.pdf" rel="noopener noreferrer" target="_blank">
+         View
+        </a>
+       </div>
+      </div>
+      <img alt="Ebook cover showing a UI/UX book with green and black design on a white surface" class="w-full rounded-b-md" height="120" src="https://storage.googleapis.com/a1aa/image/44c63031-c1b3-4fad-a187-ab3f1b71aa9c.jpg" width="180"/>
+     </div>
+     <!-- Data Science -->
+     <div class="bg-white rounded-md shadow-md relative max-w-xs mx-auto">
+      <div class="absolute top-2 left-2 bg-[#e1e0f9] text-[#5a5bbf] text-[10px] font-semibold px-2 py-[2px] rounded-full select-none">
+       E Book
+      </div>
+      <div class="absolute top-2 right-2 bg-[#00c853] text-[8px] font-semibold px-2 py-[1px] rounded select-none">
+       FREE
+      </div>
+      <div class="p-4 pt-10 text-center">
+       <h3 class="font-extrabold text-lg text-[#1a1a1a]">
+        Master the Art of Data Science
+       </h3>
+       <p class="text-[8px] text-[#1a1a1a] mt-1 mb-3">
+        A Complete Guide
+       </p>
+       <div class="flex justify-center gap-3">
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/Data Science - Ebook _ GUVI.pdf" rel="noopener noreferrer" target="_blank" download>
+         Download Now
+        </a>
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/Data Science - Ebook _ GUVI.pdf" rel="noopener noreferrer" target="_blank">
+         View
+        </a>
+       </div>
+      </div>
+      <img alt="Ebook cover showing a Data Science book with green and black design on a white surface" class="w-full rounded-b-md" height="120" src="https://storage.googleapis.com/a1aa/image/92eb0e4a-0a98-4d43-1902-8a2313e6c21d.jpg" width="180"/>
+     </div>
+     <!-- DevOps -->
+     <div class="bg-white rounded-md shadow-md relative max-w-xs mx-auto">
+      <div class="absolute top-2 left-2 bg-[#e1e0f9] text-[#5a5bbf] text-[10px] font-semibold px-2 py-[2px] rounded-full select-none">
+       E Book
+      </div>
+      <div class="absolute top-2 right-2 bg-[#00c853] text-[8px] font-semibold px-2 py-[1px] rounded select-none">
+       FREE
+      </div>
+      <div class="p-4 pt-10 text-center">
+       <h3 class="font-extrabold text-lg text-[#1a1a1a]">
+        DevOps for Beginners
+       </h3>
+       <p class="text-[8px] text-[#1a1a1a] mt-1 mb-3">
+        A Step by Step Guide
+       </p>
+       <div class="flex justify-center gap-3">
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/Devops - eBook - GUVI.pdf" rel="noopener noreferrer" target="_blank" download>
+         Download Now
+        </a>
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="../FSd1/assests/Devops - eBook - GUVI.pdf" rel="noopener noreferrer" target="_blank">
+         View
+        </a>
+       </div>
+      </div>
+      <img alt="Ebook cover showing a DevOps book with green and black design on a white surface" class="w-full rounded-b-md" height="120" src="https://storage.googleapis.com/a1aa/image/669b8c86-829e-4c93-2496-848ceb3400b3.jpg" width="180"/>
+     </div>
+     <!-- Java -->
+     <div class="bg-white rounded-md shadow-md relative max-w-xs mx-auto">
+      <div class="absolute top-2 left-2 bg-[#e1e0f9] text-[#5a5bbf] text-[10px] font-semibold px-2 py-[2px] rounded-full select-none">
+       E Book
+      </div>
+      <div class="p-4 pt-10 text-center">
+       <h3 class="font-extrabold text-lg text-[#1a1a1a]">
+        Java Programming
+       </h3>
+       <p class="text-[8px] text-[#1a1a1a] mt-1 mb-3">
+        Comprehensive Guide to Java Development
+       </p>
+       <div class="flex justify-center gap-3">
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="https://example.com/java-ebook.pdf" rel="noopener noreferrer" target="_blank" download>
+         Download Now
+        </a>
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="https://example.com/java-ebook.pdf" rel="noopener noreferrer" target="_blank">
+         View
+        </a>
+       </div>
+      </div>
+      <img alt="Ebook cover showing a Java programming book with green and black design on a white surface" class="w-full rounded-b-md" height="120" src="https://storage.googleapis.com/a1aa/image/b9281e08-4cb5-4d27-1277-a0bde0d203d0.jpg" width="180"/>
+     </div>
+     <!-- HTML -->
+     <div class="bg-white rounded-md shadow-md relative max-w-xs mx-auto">
+      <div class="absolute top-2 left-2 bg-[#e1e0f9] text-[#5a5bbf] text-[10px] font-semibold px-2 py-[2px] rounded-full select-none">
+       E Book
+      </div>
+      <div class="p-4 pt-10 text-center">
+       <h3 class="font-extrabold text-lg text-[#1a1a1a]">
+        HTML Essentials
+       </h3>
+       <p class="text-[8px] text-[#1a1a1a] mt-1 mb-3">
+        Learn the Basics of HTML5
+       </p>
+       <div class="flex justify-center gap-3">
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="https://example.com/html-ebook.pdf" rel="noopener noreferrer" target="_blank" download>
+         Download Now
+        </a>
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="https://example.com/html-ebook.pdf" rel="noopener noreferrer" target="_blank">
+         View
+        </a>
+       </div>
+      </div>
+      <img alt="Ebook cover showing an HTML book with green and black design on a white surface" class="w-full rounded-b-md" height="120" src="https://storage.googleapis.com/a1aa/image/c2c532d1-1e0c-4c8b-09a4-8793f7f27aa7.jpg" width="180"/>
+     </div>
+     <!-- CSS -->
+     <div class="bg-white rounded-md shadow-md relative max-w-xs mx-auto">
+      <div class="absolute top-2 left-2 bg-[#e1e0f9] text-[#5a5bbf] text-[10px] font-semibold px-2 py-[2px] rounded-full select-none">
+       E Book
+      </div>
+      <div class="p-4 pt-10 text-center">
+       <h3 class="font-extrabold text-lg text-[#1a1a1a]">
+        CSS Mastery
+       </h3>
+       <p class="text-[8px] text-[#1a1a1a] mt-1 mb-3">
+        Styling Websites Like a Pro
+       </p>
+       <div class="flex justify-center gap-3">
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="https://example.com/css-ebook.pdf" rel="noopener noreferrer" target="_blank" download>
+         Download Now
+        </a>
+        <a class="bg-[#00c853] text-[8px] font-semibold rounded px-3 py-1 hover:bg-[#00b14a] transition" href="https://example.com/css-ebook.pdf" rel="noopener noreferrer" target="_blank">
+         View
+        </a>
+       </div>
+      </div>
+      <img alt="Ebook cover showing a CSS book with green and black design on a white surface" class="w-full rounded-b-md" height="120" src="https://storage.googleapis.com/a1aa/image/e6a46d1b-1330-405f-ece5-b2db5bcaa9c6.jpg" width="180"/>
+     </div>
+    </div>
+   </section>
+   <!-- Code Sheets / Roadmaps Section -->
+   <section id="codeSheetsSection" class="hidden">
+    <h2 class="font-bold text-sm mb-4 text-center">
+     Code Sheets &amp; Roadmaps Collection
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-7xl mx-auto">
+     <!-- Code Sheet 1 -->
+     <div class="bg-white rounded-md shadow-md p-6 text-[#1a1a1a] max-w-xs mx-auto">
+      <h3 class="font-extrabold text-lg mb-2">
+       JavaScript Cheat Sheet
+      </h3>
+      <p class="text-sm mb-4">
+       Quick reference for JavaScript syntax and functions.
+      </p>
+      <a class="bg-[#00c853] text-white text-sm font-semibold rounded px-4 py-2 inline-block hover:bg-[#00b14a] transition" href="https://example.com/javascript-cheatsheet.pdf" rel="noopener noreferrer" target="_blank">
+       Download PDF
+      </a>
+     </div>
+     <!-- Code Sheet 2 -->
+     <div class="bg-white rounded-md shadow-md p-6 text-[#1a1a1a] max-w-xs mx-auto">
+      <h3 class="font-extrabold text-lg mb-2">
+       CSS Cheat Sheet
+      </h3>
+      <p class="text-sm mb-4">
+       Handy guide for CSS properties and selectors.
+      </p>
+      <a class="bg-[#00c853] text-white text-sm font-semibold rounded px-4 py-2 inline-block hover:bg-[#00b14a] transition" href="https://example.com/css-cheatsheet.pdf" rel="noopener noreferrer" target="_blank">
+       Download PDF
+      </a>
+     </div>
+     <!-- Code Sheet 3 -->
+     <div class="bg-white rounded-md shadow-md p-6 text-[#1a1a1a] max-w-xs mx-auto">
+      <h3 class="font-extrabold text-lg mb-2">
+       HTML Cheat Sheet
+      </h3>
+      <p class="text-sm mb-4">
+       Quick tags and attributes reference for HTML5.
+      </p>
+      <a class="bg-[#00c853] text-white text-sm font-semibold rounded px-4 py-2 inline-block hover:bg-[#00b14a] transition" href="https://example.com/html-cheatsheet.pdf" rel="noopener noreferrer" target="_blank">
+       Download PDF
+      </a>
+     </div>
+     <!-- Roadmap 1 -->
+     <div class="bg-white rounded-md shadow-md p-6 text-[#1a1a1a] max-w-xs mx-auto">
+      <h3 class="font-extrabold text-lg mb-2">
+       Frontend Developer Roadmap
+      </h3>
+      <p class="text-sm mb-4">
+       Step-by-step guide to becoming a frontend developer.
+      </p>
+      <a class="bg-[#00c853] text-white text-sm font-semibold rounded px-4 py-2 inline-block hover:bg-[#00b14a] transition" href="https://example.com/frontend-roadmap.pdf" rel="noopener noreferrer" target="_blank">
+       Download PDF
+      </a>
+     </div>
+     <!-- Roadmap 2 -->
+     <div class="bg-white rounded-md shadow-md p-6 text-[#1a1a1a] max-w-xs mx-auto">
+      <h3 class="font-extrabold text-lg mb-2">
+       Backend Developer Roadmap
+      </h3>
+      <p class="text-sm mb-4">
+       Essential skills and tools for backend development.
+      </p>
+      <a class="bg-[#00c853] text-white text-sm font-semibold rounded px-4 py-2 inline-block hover:bg-[#00b14a] transition" href="https://example.com/backend-roadmap.pdf" rel="noopener noreferrer" target="_blank">
+       Download PDF
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <script>
+   // Toggle mobile menu
+   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+   const mobileMenu = document.getElementById('mobileMenu');
+   mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+   });
+
+   // Sections
+   const ebooksSection = document.getElementById('ebooksSection');
+   const codeSheetsSection = document.getElementById('codeSheetsSection');
+
+   // Desktop buttons
+   const showEbooksBtn = document.getElementById('showEbooksBtn');
+   const showCodeSheetsBtn = document.getElementById('showCodeSheetsBtn');
+
+   showEbooksBtn.addEventListener('click', () => {
+    ebooksSection.classList.remove('hidden');
+    codeSheetsSection.classList.add('hidden');
+   });
+
+   showCodeSheetsBtn.addEventListener('click', () => {
+    ebooksSection.classList.add('hidden');
+    codeSheetsSection.classList.remove('hidden');
+   });
+
+   // Mobile buttons
+   const mobileShowEbooksBtn = document.getElementById('mobileShowEbooksBtn');
+   const mobileShowCodeSheetsBtn = document.getElementById('mobileShowCodeSheetsBtn');
+
+   mobileShowEbooksBtn.addEventListener('click', () => {
+    ebooksSection.classList.remove('hidden');
+    codeSheetsSection.classList.add('hidden');
+    mobileMenu.classList.add('hidden');
+   });
+
+   mobileShowCodeSheetsBtn.addEventListener('click', () => {
+    ebooksSection.classList.add('hidden');
+    codeSheetsSection.classList.remove('hidden');
+    mobileMenu.classList.add('hidden');
+   });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChefReadz Sign In</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Netflix+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    @font-face {
+      font-family: 'Netflix Sans';
+      src: local('Arial Black'), local('Arial Bold'), local('Arial'), local('sans-serif');
+      font-weight: 900;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body class="bg-black min-h-screen flex flex-col items-start p-6 sm:p-10 max-w-md mx-auto">
+  <h1 class="text-4xl font-extrabold text-green-600 mb-8" style="font-family: 'Netflix Sans', Arial, sans-serif;">
+    ChefReadz
+  </h1>
+  <h2 class="text-white text-4xl font-extrabold mb-6">
+    Sign In
+  </h2>
+
+  <form id="signInForm" class="w-full space-y-4">
+    <input
+      type="text"
+      id="email"
+      placeholder="Email or mobile number"
+      class="w-full bg-[#222] text-gray-300 placeholder-gray-400 rounded-md px-4 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-red-600"
+      autocomplete="username"
+    />
+    <input
+      type="password"
+      id="password"
+      placeholder="Password"
+      class="w-full bg-[#222] text-gray-300 placeholder-gray-400 rounded-md px-4 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-red-600"
+      autocomplete="current-password"
+    />
+
+    <button
+      type="submit"
+      class="w-full bg-green-600 text-white font-semibold text-lg py-4 rounded-md hover:bg-green-700 transition-colors"
+    >
+      Sign In
+    </button>
+  </form>
+
+  <p class="text-gray-400 text-center w-full mt-6 text-lg">OR</p>
+  <a href="#" class="underline text-white text-xl font-normal mb-10">Forgot password?</a>
+
+  <p class="text-xl font-normal">
+    <span class="text-gray-600">New to ChefReadz?</span>
+    <span class="font-bold">Sign up now.</span>
+  </p>
+
+  <!-- JS for validation and redirection -->
+  <script>
+    document.getElementById("signInForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (email && password) {
+        // Redirect to main.html
+        window.location.href ="main.html";
+      } else {
+        alert("Please enter both email and password.");
+      }
+    });
+  </script>
+</body>
+</html>
